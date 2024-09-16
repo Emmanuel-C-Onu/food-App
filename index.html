@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <img src="images/Capture.PNG" alt="">
+        <nav>
+            <ul>
+                
+                <li><a href="#order" target="_blank">Menu</a></li>
+                <li><a href="#order" target="_blank">Order</a></li>
+                <li><a href="#order" target="_blank">Resturant</a></li>  
+                <li><a href="login.htm" target="_blank">Sign Out</a></li>  
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="container">
+        <div class="left" id="left" >
+            <h2 id="final"></h2>
+            <div class="order" id="order">
+                <p>Kindly place Your Order</p> <br>
+                <form>
+                    <input type="text" id="input1" placeholder="Type here">
+                    <button type="submit" onclick = "food()" id="button1" class="btn1">Order</button>
+                </form>
+            </div>
+
+            <div class="riceVar" id="riceVar">
+                    <select id="riceType1">
+                        <option value="0"></option>
+                        <option value="10">Rice and Stew With Meat</option>
+                        <option value="20">Jellof Rice With Meat</option>
+                        <option value="30">Frid Rice With Meat</option>
+                        <option value="40"> Jellof and frid Rice mix with Meat</option>
+                      </select>
+                      <button type="submit" id="endNow">Add to cart</button>
+            </div>
+           
+
+            <div class="order1" id="order1">
+                <p>kindly place another Order</p> <br>
+                <form>
+                    <input type="text" id="input1" placeholder="Type here">
+                    <button onclick = "food()" id="button1" class="btn1">Order</button>
+                </form>
+            </div>
+
+
+        </div>
+
+        <div class="right">
+            <!-- <img src="https://i.gifer.com/97hX.gif" alt=""> -->
+        
+           
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo_img">
+            <a href="index.html">
+                <img src="images/Capture.PNG" alt="logo">
+            </a>
+
+
+            <!-- <img src="Images/logo.png" alt="logo" width="50" height="40">
+            <p class="logo">ₑCₐₛₕ</p> -->
+        </div>
+
+        <div class="footer_1">
+            <p>For You</p>
+            <ul>
+                <li><a href="index.html">Menu</a></li>
+                <li><a href="">Resturant</a></li>
+                <li><a href="">BAR</a></li>
+                <li><a href="">FAQs</a></li>
+                <li><a href="">Customers Support</a></li>
+            </ul>
+        </div>
+
+        
+        <div class="footer_1">
+            <p>Company</p>
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">NewsRoom</a></li>
+                <li><a href="">Career</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms and Condition</a></li>
+            </ul>
+        </div>
+        <div class="footer_1">
+            <p>We're Social</p>
+            <ul>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Youtube</a></li>
+                <li><a href="">linkdin</a></li>
+            </ul>
+        </div>
+
+
+    </footer>
+    <div class="copy">Copyright &copy; 2024 eFood, Inc. All Right Reserved</div>
+
+
+    <!-- <script>
+        let Answer = document.getElementById('welcome')
+        document.getElementById('myForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // console.log(document.getElementById('myInput').value);
+            Answer.innerHTML = document.getElementById('myInput').value;
+        });
+
+
+    </script> -->
+
+   
+    
+    <script src="script.js"></script>
+</body>
+</html>
